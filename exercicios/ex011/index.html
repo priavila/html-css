@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+   
+    <!--<audio src="midias/happy-mistake.mp3" autoplay controls></audio>
+    Uma maneira de colocar áudio -->
+
+    <audio preload="metadata" controls loop>
+        <source src="midias/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav"> <!-- Tentar evitar o formato WAV -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.<a href="midias/happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    
+    <p>Professor Guanabara e seu antigo podcast.</p>
+
+    <audio preload="metadata" controls>
+        <source src="midias/guanacast-33.mp3" type="audio/mp3">
+    </audio>
+
+</body>
+</html>

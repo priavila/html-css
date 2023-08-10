@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitando o Hover</title>
+
+    <style>
+        .link:hover{
+            color: red;
+        }
+
+        a:hover{
+            color: rgb(180, 180, 0);
+        }
+
+        div:hover{
+            color: chartreuse;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            color:darkorange
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Como utilizar o HOVER na prática</h1>
+    <h2>Passe o mouse em cima do link abaixo para ele mudar de cor.</h2>
+
+    <p><a class="link" href="#">Esse é o link com o exemplo para você ver como funciona</a></p>
+
+    <h2>Exemplo dois</h2>
+
+    <a href="#">Passe o mouse aqui</a>
+
+    <h2>Exemplo três</h2>
+    <div>
+       Não passe o mouse aqui.
+       <p><strong>TU É CURIOSO, NÉ?</strong></p>
+    </div>
+</body>
+</html>

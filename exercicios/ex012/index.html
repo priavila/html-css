@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video controls width="560" poster="imagens/capa-morangos.png">
+        <source src="midia/video-morangos.mp4" type="video/mp4">
+        <source src="midia/video-morangos.webm" type="video/mp4">
+        <source src="midia/video-morangos.mkv" type="video/webm">   
+        <source src="midia/video-morangos.ogv" type="video/ogg">
+        <p>Seu navegador não é compatível para executar vídeos. <a href="midia/video-morangos.mp4">Clique aqui para baixar o vídeo MP4.</a></p>
+        <!-- esse formato pode gerar um custo grande para o cliente com a hospedagem -->
+    </video>
+
+    <!-- FORMA MAIS ADEQUADA PARA INSERIR VÍDEOS NO SITE -->
+    
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NDu3dJ6KyP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeo do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/76723201?h=d5920159e1&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

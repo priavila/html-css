@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children            
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: #5fbb02;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: #9b6262;
+        }
+
+        a:hover{
+            color: #f30606;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: darkblue;
+        }
+
+        .especial::before{
+            content: '☞ ';
+        }
+
+        .especial::after{
+            content: ' ☜';
+            
+        }
+
+        .especial{
+            background-color: rgb(238, 231, 135);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://instagram.com/prisavila" target="_blank">Instagram</a></li>
+        <li><a href="https://youtube.com/@priscyllaavila" target="_blank" class="especial">YouTube</a></li>
+        <li><a href="https://twitch.tv/prisavila" target="_blank">Twitch</a></li>
+    </ul>
+</body>
+</html>

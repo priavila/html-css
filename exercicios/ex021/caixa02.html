@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            background-color: darkkhaki;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+
+        }
+
+        header{
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: coral;
+            padding: 2px;
+            box-shadow: 2px 2px 4px 1px #00000052
+        }
+
+        nav > a{
+            color: darkslategray;
+            margin-left: 20px;
+            text-decoration: none;
+            
+        }
+
+        nav > a:hover{
+            font-weight: bolder;
+            color: red;
+        }
+
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.377);
+        }
+
+        article{
+            background-color: cadetblue;
+            margin: 3px;
+        }
+
+        article > aside{
+            background-color: #3d7bee;
+        }
+
+        footer{
+            background-color: #2b2b33;
+            text-align: center;
+            font-weight: lighter;
+            padding: 1px;
+            color: white;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Meu site</h1>
+        <!-- NAVEGAÇÃO -->
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>    
+    </header>
+    <!-- CONTEÚDO PRINCIPAL DO SITE -->
+    <main>
+        <!-- SESSÃO DE CONTEÚDOS -->
+        <section id="assuntos">
+            <!-- ARTIGOS/MATÉRIAS/TEXTOS -->
+            <article>
+                <h2>Matéria sobre Programação</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam voluptatibus ipsum nisi tempore aliquid. Optio, eaque eveniet eligendi repudiandae totam quasi earum delectus quae error dolore numquam? Quibusdam, quisquam doloribus!</p>
+                <!-- MATÉRIA ESCRITA POR QUEM-->
+                <aside>
+                    <p>Matéria escrita por Fulano de Tal</p>
+                </aside>
+            </article>
+
+            <article>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, animi nesciunt! Iure suscipit numquam iste molestiae, saepe eveniet facere unde fugiat quia aliquid obcaecati tempore exercitationem rem ipsam. Magnam, modi?</p>
+            </article>
+                
+        </section>
+        <section id="fofocas">
+            <h2>As fofocas mais quentes do momento</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nemo aliquid temporibus officia deserunt non cumque labore excepturi laudantium sit ex laboriosam qui vero perferendis, beatae corrupti et ut impedit!</p>
+
+        </section>
+    </main>
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Desenvolvido durante o CursoemVideo</p>
+    </footer>     
+</body>
+</html>
