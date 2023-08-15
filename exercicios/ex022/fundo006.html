@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Imagem de fundo</title>
     <style>
         body{
             height: 100vh;
-            background-color: blue;
+            
+            /*background-color: blue;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /* Shorthand - Background
+                color > image > repeat > position > [size - nao funciona com o size] > attachment
+            */
+
+            background: blue url('imagens/wallpaper002.jpg') no-repeat center center fixed;
             background-size: cover;
         }
 
