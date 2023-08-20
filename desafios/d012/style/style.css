@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte-principal: Verdana, Arial, Helvetica, Sans-serif;
+    --fonte-titulo: 'Passion One', cursive, Sans-serif;
+    --fonte-texto: 'Sriracha', cursive, Sans-serif;
+
+    --cor01: white;
+    --cor02: black; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--cor02);
+    min-height: 265px;
+    text-align: center;
+}
+
+header h1{
+    color: var(--cor01);
+    font-family: var(--fonte-titulo);
+    font-size: 8.5em;
+    font-weight: bold;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header p{
+    color: var(--cor01);
+    font-family: var(--fonte-principal);
+    padding-bottom: 30px;
+}
+header a{
+    color: var(--cor01);
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+body{
+    font-family: var(--fonte-principal);
+}
+
+.fundo-branco{
+    background-color: var(--cor01);
+    max-width: 700px;
+    padding: 50px 30px;
+    
+}
+
+.fundo-transparente{
+    background-color: var(--cor02);
+    color: var(--cor01);
+    max-width: 575px; 
+}
+
+.texto{
+    font-family: var(--fonte-texto);
+    font-size: 3em;
+    line-height: 2em;
+}
+
+footer{
+    background-color: var(--cor02);
+    color: var(--cor01);
+    padding: 10px;
+    text-align: center;
+}
+
+footer a{
+    color: var(--cor01);
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor01);
+}
+
+
